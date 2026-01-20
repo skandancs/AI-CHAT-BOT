@@ -5,10 +5,14 @@ st.set_page_config("Bodha AI by Skandan", layout="wide")
 st.title("Bodha AI")
 
 client = Groq(api_key=st.secrets["GROQ_API_KEY"])
-
 col1, col2 = st.columns(2)
-st.image("bodhaai.jpeg", caption="Bodha AI", use_container_width=10)
 
+cols = st.columns(3)  # 3-column grid
+#hi
+for i, col in enumerate(cols):
+    with col:
+        st.image("bodhaai.jpeg", width=150, caption=f"Bodha AI {i+1}")
+#hi
 with col1:
     product = st.text_input("Product")
     audience = st.text_input("Audience")
