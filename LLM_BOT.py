@@ -8,11 +8,7 @@ client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 col1, col2 = st.columns(2)
 
 cols = st.columns(3)  # 3-column grid
-#hi
-for i, col in enumerate(cols):
-    with col:
-        st.image("bodhaai.jpeg", width=150, caption=f"Bodha AI {1}")
-#hi
+
 with col1:
     product = st.text_input("Product")
     audience = st.text_input("Audience")
