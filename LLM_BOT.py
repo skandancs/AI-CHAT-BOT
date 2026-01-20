@@ -11,7 +11,7 @@ cols = st.columns(3)  # 3-column grid
 #hi
 for i, col in enumerate(cols):
     with col:
-        st.image("bodhaai.jpeg", width=150, caption=f"Bodha AI {i+1}")
+        st.image("bodhaai.jpeg", width=150, caption=f"Bodha AI {1}")
 #hi
 with col1:
     product = st.text_input("Product")
